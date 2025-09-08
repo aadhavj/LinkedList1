@@ -47,10 +47,10 @@ int main(){
 	
 	//Check if Palindrome
 	if (strcmp(filteredString, revString) == 0){
-		cout << filteredString << " is a palindrome!";
+		cout << "Palindrome!";
 	}
 	else{
-		cout << filteredString << " is not a palindrome!";
+		cout << "Not a palindrome!";
 	}
 	return 0;
 }
