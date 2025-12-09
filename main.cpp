@@ -1,8 +1,9 @@
 #include <iostream>
 #include "node.h"
+#include "Student.h"
 using namespace std;
 
-void add(int newValue, Node* &head);
+void add(Student* &newValue, Node* &head);
 void printNode(Node* next, Node* head);
 
 int main(){
@@ -16,7 +17,7 @@ int main(){
 
 	return 0;
 }
-void add(int newValue, Node* &head){
+void add(Student* &newValue, Node* &head){
 	Node* current = head;
 	if (current == NULL){
 		head = new Node();
@@ -36,7 +37,8 @@ void printNode(Node* next, Node* head){
 		cout << "list: ";
 	}
 	if (next != NULL) {
-		cout << next->getValue() << " ";
+		next->getValue()->print();
+		cout << endl;
 		printNode(next->getNext(), head);
 	}
 	else{

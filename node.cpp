@@ -1,7 +1,7 @@
 #include "Node.h"
 
 Node::Node() {
-	value = 0;
+	value = NULL;
 	next = NULL;
 }
 Node::~Node() {
@@ -9,10 +9,10 @@ Node::~Node() {
 	next = NULL;
 }
 
-void Node::setValue(int newValue){
+void Node::setValue(Student* &newValue){
 	value = newValue;
 }
-int Node::getValue(){
+Student* Node::getValue(){
 	return value;
 }
 void Node::setNext(Node* newNext) {

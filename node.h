@@ -1,6 +1,7 @@
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
+#include "Student.h"
 
 using namespace std;
 
@@ -8,12 +9,12 @@ class Node{
 	public:
 		Node();
 		~Node();
-		void setValue(int);
-		int getValue();
+		void setValue(Student*&);
+		Student* getValue();
 		void setNext(Node*);
 		Node* getNext();
 	private:
-		int value;
+		Student* value;
 		Node* next;
 };
 #endif
