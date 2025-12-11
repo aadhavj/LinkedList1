@@ -4,6 +4,7 @@
 using namespace std;
 
 Student::Student(char* inputName, int inputAge) {
+	name = new char[1000];
 	strcpy(name, inputName);
 	age = inputAge;
 }

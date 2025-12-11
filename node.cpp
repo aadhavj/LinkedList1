@@ -1,7 +1,7 @@
 #include "Node.h"
 
-Node::Node() {
-	value = NULL;
+Node::Node(Student* inputStudent) {
+	value = inputStudent;
 	next = NULL;
 }
 Node::~Node() {

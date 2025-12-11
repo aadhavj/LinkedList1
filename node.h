@@ -7,7 +7,7 @@ using namespace std;
 
 class Node{
 	public:
-		Node();
+		Node(Student*);
 		~Node();
 		void setValue(Student*&);
 		Student* getValue();
