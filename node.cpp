@@ -1,23 +1,30 @@
+//Imports
 #include "Node.h"
 
+//Constructor
 Node::Node(Student* inputStudent) {
-	value = inputStudent;
+	student = inputStudent;
 	next = NULL;
 }
+//Destructor
 Node::~Node() {
-	delete &value;
+	delete student;
 	next = NULL;
 }
 
-void Node::setValue(Student* &newValue){
-	value = newValue;
+//set Student
+void Node::setStudent(Student* &newStudent){
+	student = newStudent;
 }
-Student* Node::getValue(){
-	return value;
+//get Student
+Student* Node::getStudent(){
+	return student;
 }
+//set next node
 void Node::setNext(Node* newNext) {
 	next = newNext;
 }
+//get next node
 Node* Node::getNext() {
 	return next;
 }
